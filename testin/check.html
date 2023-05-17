@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read orders</title>
+  </head>
+  <body>
+    <h1>orders</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>On Sale</th>
+        <th>Categories</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      <% order.forEach(function(order) { %>
+        <tr>
+          <td><%= order.ProductNmae =%></td>
+          <td><%= order.productPrice %></td>
+          <td><%= order.productBrand %></td>
+          <td><%= order.productLocation %></td>
+          <td><%= order.productCFO %></td>
+          <td><%= order.productDescription %></td>
+          <td><%= order.imagePath %></td>
+         
+        </tr>
+      <% }); %>
+
+      
+        
+    </table>
+  </body>
+</html>
